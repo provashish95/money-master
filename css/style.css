@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;600;700&family=Moon+Dance&family=Open+Sans:wght@300&family=PT+Serif&family=Poppins:wght@100;500;600;700&family=Raleway:wght@500;700&family=Roboto:ital,wght@0,700;1,300&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .icone {
     margin-left: .5rem;
+}
+
+.input-text-style {
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    padding: .3rem;
+}
+
+.input-style {
+    background-color: rgb(216, 215, 214);
+    margin-left: -3rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    padding: .5rem;
+}
+
+.saving-input-style {
+    border: none;
+    padding: .5rem;
+    background-color: rgb(216, 215, 214);
 }
