@@ -51,7 +51,7 @@
                                                     <p class="input-text-style text-end fw-bold">income:</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="input-style">
+                                                    <input id="total-income" type="text" class="input-style" value="10000">
                                                 </div>
                                             </div>
                                         </div>
@@ -64,26 +64,26 @@
                                                     <p class="input-text-style  text-end fw-bold">Clothes:</p>
                                                 </div>
                                                 <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
-                                                    <input type="text" class="input-style"><br>
-                                                    <input type="text" class="input-style"><br>
-                                                    <input type="text" class="input-style"><br>
+                                                    <input id="food-input" type="text" class="input-style"><br>
+                                                    <input id="rent-input" type="text" class="input-style"><br>
+                                                    <input id="clothes-input" type="text" class="input-style"><br>
                                                 </div>
-                                                <button class="btn btn-info  m-auto w-50 fs-4  text-white">Calculate</button>
+                                                <button id="calculate-btn" class="btn btn-info  m-auto w-50 fs-4  text-white">Calculate</button>
 
                                             </div>
                                             <div class="row">
                                                 <div class="col-12 ">
-                                                    <h4 class="text-center  my-4">Total Expenses: <span>5000</span></h4>
-                                                    <h4 class="text-center mb-4">Balance: <span>5000</span></h4>
+                                                    <h4 class="text-center  my-4">Total Expenses: <span id="total-expenses">5000</span></h4>
+                                                    <h4 class="text-center mb-4">Balance: <span id="balance">5000</span></h4>
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <label class=" fs-5 p-3">save:</label>
-                                                        <input type="text" class="w-25 saving-input-style">
+                                                        <input id="savings-input" type="text" class="w-25 saving-input-style">
                                                         <span class="p-3">%</span>
-                                                        <button class="btn btn-info text-white  px-5 py-2">Save</button>
+                                                        <button id="savings" class="btn btn-info text-white  px-5 py-2">Save</button>
                                                     </div>
-                                                    <h4 class="text-center mt-4">Saving Amount: <span>5000</span></h4>
-                                                    <h4 class="text-center mt-4">Remaining Balance: <span>5000</span></h4>
+                                                    <h4 class="text-center mt-4">Saving Amount: <span id="savings-amount">5000</span></h4>
+                                                    <h4 class="text-center mt-4">Remaining Balance: <span id="remaining-amount">5000</span></h4>
                                                 </div>
                                             </div>
                                         </div>
