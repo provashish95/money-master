@@ -37,3 +37,30 @@ body {
     padding: .5rem;
     background-color: rgb(216, 215, 214);
 }
+
+
+/* Notification css here */
+
+.notify {
+    color: rgb(65, 2, 2);
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+    background: #13cfbd;
+    margin-top: 20px;
+    border-radius: 2rem;
+    padding: 8px 20px;
+    display: none;
+    box-shadow: -4px 13px 5px #FF3C5F;
+}
+
+.notify-section {
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+/* .action-left {
+    color: #FF3C5F;
+    margin-top: 10px;
+} */

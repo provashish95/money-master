@@ -1,22 +1,45 @@
+function gettingInputValue(id) {
+    const inputElement = document.getElementById(id);
+    const inputValue = parseFloat(inputElement.value);
+    return inputValue;
+}
+
+function updateAmount(id, result) {
+    document.getElementById(id).innerText = result.toFixed(2);
+}
+
 document.getElementById("calculate-btn").addEventListener("click", function() {
-    const foodInput = document.getElementById("food-input");
-    const rentInput = document.getElementById("rent-input");
-    const clothesInput = document.getElementById("clothes-input");
-    const incomeInput = document.getElementById("total-income");
+
+    //Call function gettingInputValue() 
+    const foodInputValue = gettingInputValue("food-input");
+    const rentInputValue = gettingInputValue("rent-input");
+    const clothesInputValue = gettingInputValue("clothes-input");
+    const incomeInputValue = gettingInputValue("total-income");
 
 
-    const foodInputValue = parseFloat(foodInput.value);
-    const rentInputValue = parseFloat(rentInput.value);
-    const clothesInputValue = parseFloat(clothesInput.value);
-    const incomeInputValue = parseFloat(incomeInput.value);
+    //Check input value using error handler....
+    const errorHandle = document.getElementById("notify-fail");
+    if (isNaN(foodInputValue) || isNaN(rentInputValue) || isNaN(clothesInputValue) || isNaN(incomeInputValue)) {
 
+        errorHandle.style.display = "block";
+        errorHandle.innerText = "Please Enter number";
 
+    } else if (foodInputValue < 0 || rentInputValue < 0 || clothesInputValue < 0 || incomeInputValue < 0) {
 
-    const totalExpenses = foodInputValue + rentInputValue + clothesInputValue;
-    const balance = incomeInputValue - totalExpenses;
+        errorHandle.style.display = "block";
+        errorHandle.innerText = "Your Input Value is Negative!";
 
-    document.getElementById("total-expenses").innerText = totalExpenses.toFixed(2);
-    document.getElementById("balance").innerText = balance.toFixed(2);
+    } else {
+        errorHandle.style.display = "none";
+
+        //Calculate total Expenses and Balance
+        const totalExpenses = foodInputValue + rentInputValue + clothesInputValue;
+        const balance = incomeInputValue - totalExpenses;
+
+        //Call funtion updateAmount()
+        updateAmount("total-expenses", totalExpenses);
+        updateAmount("balance", balance);
+    }
 });
 
 //savings part here
