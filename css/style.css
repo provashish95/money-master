@@ -12,6 +12,10 @@ body {
     width: 11rem;
 }
 
+.bg-color {
+    background-color: #efefef;
+}
+
 
 /* Input text and input box css */
 
