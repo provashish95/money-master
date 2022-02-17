@@ -16,16 +16,25 @@
 </head>
 
 <body>
+    <!-- Notify section start here.... -->
+
+    <!-- Notify section start here.... -->
     <!-- header section start here -->
     <header>
         <section class="mt-5">
             <div class="container">
+
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center align-items-center">
-                        <h1 class="text-center text-info fw-bolder"> Personal Accountant</h1><i class="fas fa-hand-holding-usd fs-2 text-info icone"></i>
+                        <h1 class="text-center text-info fw-bolder"> Personal Accountant</h1><i class="fas fa-hand-holding-usd fs-2 text-info"></i>
                     </div>
                 </div>
             </div>
+            <!-- Notify section start here.... -->
+            <div class="notify-section">
+                <p id="notify-fail" class="notify"></p>
+            </div>
+            <!-- Notify section end here.... -->
         </section>
     </header>
     <!-- header section end here -->
@@ -41,11 +50,11 @@
 
                     <!-- Calculations side start here....... -->
                     <div class="col-sm-12 col-lg-6 col-xl-6">
-                        <div class="conatiner my-5">
+                        <div class="conatiner">
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-center align-items-center">
                                     <div>
-                                        <h4 class="mb-3 text-center">Income</h4>
+                                        <h4 class="my-3 text-center">Income</h4>
 
                                         <div class="conatiner">
                                             <div class="row">
@@ -53,7 +62,7 @@
                                                     <p class="input-text-style text-end fw-bold">income:</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input id="total-income" type="text" class="input-style">
+                                                    <input id="total-income" type="text" class="input-style width">
                                                 </div>
                                             </div>
                                         </div>
@@ -66,12 +75,11 @@
                                                     <p class="input-text-style  text-end fw-bold">Clothes:</p>
                                                 </div>
                                                 <div class="col-6 col-lg-6">
-                                                    <input id="food-input" type="text" class="input-style"><br>
-
-                                                    <input id="rent-input" type="text" class="input-style"><br>
-                                                    <input id="clothes-input" type="text" class="input-style"><br>
+                                                    <input id="food-input" type="text" class="input-style width"><br>
+                                                    <input id="rent-input" type="text" class="input-style width"><br>
+                                                    <input id="clothes-input" type="text" class="input-style width"><br>
                                                 </div>
-                                                <button id="calculate-btn" class="btn btn-info  m-auto w-50 fs-4  text-white">Calculate</button>
+                                                <button id="calculate-btn" class="btn btn-info text-white  px-5 py-2 m-auto width">Calculate</button>
 
                                             </div>
                                             <div class="row">
@@ -96,13 +104,7 @@
                         </div>
                     </div>
                     <!-- Calculations  side end here....... -->
-                    <!-- Notify section start here.... -->
-                    <div class="notify-section">
-                        <p id="notify-fail" class="notify"></p>
 
-
-                    </div>
-                    <!-- Notify section start here.... -->
 
                 </div>
             </div>

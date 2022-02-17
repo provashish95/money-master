@@ -9,13 +9,6 @@ body {
 }
 
 
-/* Increase icon size of heading */
-
-.icone {
-    margin-left: .5rem;
-}
-
-
 /* Input text and input box css */
 
 .input-text-style {
@@ -59,8 +52,6 @@ body {
     margin: 0 auto;
 }
 
-
-/* .action-left {
-    color: #FF3C5F;
-    margin-top: 10px;
-} */
+.width {
+    width: 11rem;
+}
